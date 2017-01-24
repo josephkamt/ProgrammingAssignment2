@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
         if(nrow(x) != ncol(x)) {
                 message("matrix is not squared")
                 message("matrix is not set in function")
-                x <- NULL
+                x <<- NULL
         }
 # functions for the x matrix and calculations for the inverse of the same matrix
 # and storing are generated
